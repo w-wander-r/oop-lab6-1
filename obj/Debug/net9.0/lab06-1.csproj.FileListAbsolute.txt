@@ -1,0 +1,14 @@
+E:\study\2curs\ooooooooop\lab06-1\bin\Debug\net9.0\lab06-1.exe
+E:\study\2curs\ooooooooop\lab06-1\bin\Debug\net9.0\lab06-1.deps.json
+E:\study\2curs\ooooooooop\lab06-1\bin\Debug\net9.0\lab06-1.runtimeconfig.json
+E:\study\2curs\ooooooooop\lab06-1\bin\Debug\net9.0\lab06-1.dll
+E:\study\2curs\ooooooooop\lab06-1\bin\Debug\net9.0\lab06-1.pdb
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.AssemblyInfoInputs.cache
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.AssemblyInfo.cs
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.csproj.CoreCompileInputs.cache
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.dll
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\refint\lab06-1.dll
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.pdb
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.genruntimeconfig.cache
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\ref\lab06-1.dll
