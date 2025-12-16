@@ -8,7 +8,10 @@
             using (File.Create("no_file.txt")) { }
             using (File.Create("bad_data.txt")) { }
             using (File.Create("overflow.txt")) { }
-            
+
+            int counterProduct = 0;
+            long sumProduct = 0;
+
             for (int i = 10; i <= 29; i++)
             {
                 string fileName = $"{i}.txt";
@@ -25,11 +28,16 @@
 
                         try
                         {
-                            // todo
+                             checked
+                            {
+                                int product = num1 * num2;
+                                counterProduct++;
+                                sumProduct += product;
+                            }
                         }
-                        catch (Exception)
+                        catch (OverflowException)
                         {
-                            // todo
+                            File.AppendAllText("overflow.txt", fileName + Environment.NewLine);
                         }
                     }
                     catch (FormatException)
@@ -45,6 +53,16 @@
                 }
             }
 
+            // calculate avg
+            if (counterProduct > 0)
+            {
+                double avg = (double)sumProduct / counterProduct;
+                Console.WriteLine($"avg: {avg}");
+            }
+            else
+            {
+                Console.WriteLine("no product");
+            }
         }
         catch (Exception ex)
         {

@@ -12,3 +12,4 @@ E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\refint\lab06-1.dll
 E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.pdb
 E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.genruntimeconfig.cache
 E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\ref\lab06-1.dll
+E:\study\2curs\ooooooooop\lab06-1\obj\Debug\net9.0\lab06-1.sourcelink.json
