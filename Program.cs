@@ -4,6 +4,8 @@
     {
         try
         {
+            // GenerateFiles();
+            
             // writing/rewriting files
             using (File.Create("no_file.txt")) { }
             using (File.Create("bad_data.txt")) { }
@@ -28,7 +30,7 @@
 
                         try
                         {
-                             checked
+                            checked
                             {
                                 int product = num1 * num2;
                                 counterProduct++;
@@ -68,6 +70,21 @@
         {
             // error writing/rewriting files no_file.txt, bad_data.txt, overflow.txt
             Console.WriteLine($"error: can't write or | rewrite files {ex.Message}");
+        }
+    }
+
+    static void GenerateFiles()
+    {
+        Random rnd = new Random();
+
+        for (int i = 10; i <= 29; i++)
+        {
+            string fileName = $"{i}.txt";
+
+            int num1 = rnd.Next(-10000, 10000);
+            int num2 = rnd.Next(-10000, 10000);
+
+            File.WriteAllText(fileName, $"{num1}{Environment.NewLine}{num2}");
         }
     }
 }
