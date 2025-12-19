@@ -5,7 +5,7 @@
         try
         {
             // GenerateFiles();
-            
+
             // writing/rewriting files
             using (File.Create("no_file.txt")) { }
             using (File.Create("bad_data.txt")) { }
@@ -65,6 +65,10 @@
             {
                 Console.WriteLine("no product");
             }
+        }
+        catch (OverflowException ov)
+        {
+            Console.WriteLine("Overflow");
         }
         catch (Exception ex)
         {
