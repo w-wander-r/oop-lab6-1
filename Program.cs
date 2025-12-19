@@ -47,6 +47,10 @@
                         // if can't read that data
                         File.AppendAllText("bad_data.txt", fileName + Environment.NewLine);
                     }
+                    catch (OverflowException)
+                    {
+                        File.AppendAllText("overflow.txt", fileName + Environment.NewLine);
+                    }
                 }
                 catch (FileNotFoundException)
                 {
@@ -65,10 +69,6 @@
             {
                 Console.WriteLine("no product");
             }
-        }
-        catch (OverflowException ov)
-        {
-            Console.WriteLine("Overflow");
         }
         catch (Exception ex)
         {
