@@ -7,9 +7,9 @@
             // GenerateFiles();
 
             // writing/rewriting files
-            using (File.Create("no_file.txt")) { }
-            using (File.Create("bad_data.txt")) { }
-            using (File.Create("overflow.txt")) { }
+            using (File.Create("no_file.txt")) { } // log file for missing files
+            using (File.Create("bad_data.txt")) { } // log file for when data file contais corrupted data
+            using (File.Create("overflow.txt")) { } // log file for when data file contais >int32 || product >int32
 
             int counterProduct = 0;
             long sumProduct = 0;
@@ -24,10 +24,11 @@
 
                     try
                     {
-                        // first two lines into int
+                        // parsing two firs lines into int32
                         int num1 = int.Parse(lines[0]);
                         int num2 = int.Parse(lines[1]);
 
+                        // trying to catch the overflow if the product can't fit in int32
                         try
                         {
                             checked
@@ -49,6 +50,7 @@
                     }
                     catch (OverflowException)
                     {
+                        // if numders parsed from file can't fit in int32
                         File.AppendAllText("overflow.txt", fileName + Environment.NewLine);
                     }
                 }
@@ -77,6 +79,7 @@
         }
     }
 
+    // method for generating files
     static void GenerateFiles()
     {
         Random rnd = new Random();
